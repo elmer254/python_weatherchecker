@@ -14,6 +14,7 @@ def CreateWidgets():
     findButton = Button(root, text="FIND WEATHER", command=findWeather)
     findButton.grid(row=1, column=0, padx=5, pady=5, columnspan=2)
 
+    
     clearButton = Button(root, text="CLEAR", command=clearEntries)
     clearButton.grid(row=1, column=1, padx=5, pady=5, columnspan = 2)
 
@@ -36,7 +37,7 @@ def CreateWidgets():
     windLabel.grid(row=5, column=0, padx=10, pady=5)
     root.windEntry = Entry(root, width=36)
     root.windEntry.grid(row=5, column=1, padx=10, pady=5)
-
+to GitHub
     pressureLabel = Label(root, text="ATMOSPHERIC PRESSURE : ", bg="skyblue")
     pressureLabel.grid(row=6, column=0, padx=10, pady=5)
     root.pressureEntry = Entry(root, width=36)
@@ -48,7 +49,7 @@ def CreateWidgets():
     root.descEntry.grid(row=7, column=1, padx=10, pady=5)
 
 # Defining findWeather() function to find the weather of the user-input city
-def findWeather():
+def findWeather():to GitHub
     # Storing the API KEY
     APIKey = 'c5a0f49c8945a229fbf7d7fb4cb58699'
     # Storing the Weather URL (base URL) to which the request has to be sent
@@ -108,7 +109,7 @@ def findWeather():
         root.descEntry.insert('0',weatherDescription)
     # If cod key value is 404 then city is not found
     else:
-        messagebox.showerror("ERROR", "CITY NOT FOUND!")
+        messagebox.showerror("ERROR", "nigga enter a name of a city!")
 
 # Defining clearEntries() to clear the values from the text entries of tkinter window
 def clearEntries():
@@ -123,7 +124,7 @@ def clearEntries():
 # Creating object of tk class
 root = tk.Tk()
 # Setting the title, background color, windowsize & disabling the resizing property
-root.title("PyWEATHER")
+root.title("NIgga's weather station")
 root.config(background="skyblue")
 root.geometry("570x320")
 root.resizable(True, True)
